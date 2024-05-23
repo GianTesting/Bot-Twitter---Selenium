@@ -28,10 +28,10 @@ def test_block_accounts(browser):
 
     twitter_page_actions.type_text(twitter_page_actions.PASSWORD_INPUT, password)
 
-    time.sleep(10)
+    time.sleep(5)
 
     #Acá cambiar la ruta por la tuya donde tenés guardado el csv.
-    with open(r'C:\Users\gian_\Desktop\twitter bot\Cuentas\CuentasTwitter.csv', newline='') as csvfile:
+    with open(r'C:\Users\gian_\Desktop\Twitter\Cuentas\CuentasTwitter.csv', newline='') as csvfile:
         for account_url in csvfile:
             twitter_page_actions.block_user(account_url.strip())
             
